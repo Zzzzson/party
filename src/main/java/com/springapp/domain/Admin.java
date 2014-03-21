@@ -3,21 +3,19 @@ package com.springapp.domain;
 import java.io.Serializable;
 
 /**
- * Created by plus on 14-3-18.
+ * Created by plus on 14-3-21.
  */
-public class User implements Serializable{
+public class Admin implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
-    private Integer  id;
+    private Integer id;
 
     private String name;
 
-    private String email;
-
     private String password;
-    // 0 is girls,1 is boys;
-    private int sex;
+
+    private int authority;
 
     public Integer getId() {
         return id;
@@ -39,23 +37,15 @@ public class User implements Serializable{
         return password;
     }
 
-    public int getSex() {
-        return sex;
-    }
-
-    public void setSex(int sex) {
-        this.sex = sex;
-    }
-
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
+    public int getAuthority() {
+        return authority;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAuthority(int authority) {
+        this.authority = authority;
     }
 }
