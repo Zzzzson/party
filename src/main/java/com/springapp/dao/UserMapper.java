@@ -8,5 +8,5 @@ import com.springapp.domain.User;
 public interface UserMapper {
     User getUser(int id);
 
-    void insertUser(User user);
+    void insertUser(String name,String email,String password,int sex);
 }

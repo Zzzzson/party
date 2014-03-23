@@ -5,15 +5,15 @@
     <cache/>
 
     <insert id="insertUser" parameterType="User">
-        INSERT INTO USER (USER_ID,NAME,EMAIL,PASSWORD,SEX)
-        VALUE (#{id},#{name},#{email},#{password},#{sex})
+        INSERT INTO USER (NAME,EMAIL,PASSWORD,SEX)
+        VALUE (#{name},#{email},#{password},#{sex})
     </insert>
 
     <select id="getUser" resultType="User">
         SELECT USER_ID,NAME,EMAIL,PASSWORD,SEX
         FROM USER
         WHERE USER_ID = #{id}
-        </select>
+    </select>
 
 
 </mapper>
