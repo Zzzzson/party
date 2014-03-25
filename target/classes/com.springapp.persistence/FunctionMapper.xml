@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springapp.persistence.FunctionMapper">
+    <select id="getFunction" resultType="Function">
+          SELECT NAME,INTRODUCTION,ADDRESS
+          FROM FUNCTION
+          WHERE function_id = #{id}
+    </select>
+
+    <insert id="insertFunction">
+        INSERT INTO FUNCTION(NAME ,INTRODUCTION,ADDRESS) VALUE (#{name},#{introduction},#{address})
+    </insert>
+
+    <update id="update">
+        UPDATE FUNCTION
+        SET ADDRESS = #{address}
+        WHERE FUNCTION_ID = #{id}
+    </update>
+</mapper>
