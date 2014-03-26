@@ -9,7 +9,7 @@ public class User implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
-    private Integer  id;
+    private Integer  userId;
 
     private String name;
 
@@ -19,12 +19,12 @@ public class User implements Serializable{
     // 0 is girls,1 is boys;
     private int sex;
 
-    public Integer getId() {
-        return id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getName() {

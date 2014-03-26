@@ -8,13 +8,7 @@ create table user(
   );
 
 create table function(
-    function_id int not null  primary key auto_increment,
-    name varchar(80) null,
-    introduction varchar(300) null,
-    address varchar(80) null,
-    function_type varchar(80),
-    deadline date,
-    startTime date
+
 );
 
 create table user_function(

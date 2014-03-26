@@ -3,6 +3,7 @@ package com.springapp.persistence;
 import com.springapp.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -11,9 +12,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper {
 
-    @Select("SELECT USER_ID,NAME,EMAIL,PASSWORD,SEX FROM USER WHERE NAME = #{name}")
+    @Select("SELECT USER_ID AS USERID,NAME,EMAIL,PASSWORD,SEX FROM USER WHERE NAME = #{name}")
     User getUser(String name);
 
     @Insert("INSERT INTO USER (USER_ID,NAME,EMAIL,PASSWORD,SEX) VALUE (#{id},#{name},#{email},#{password},#{sex})")
     void insertUser(User user);
+
 }

@@ -11,9 +11,9 @@ public class Function implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
-    private Integer id;
+    private Integer functionId;
 
-    private String name;
+    private String tittle;
 
     private String introduction;
 
@@ -31,20 +31,20 @@ public class Function implements Serializable{
         return serialVersionUID;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getFunctionId() {
+        return functionId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setFunctionId(Integer functionId) {
+        this.functionId = functionId;
     }
 
-    public String getName() {
-        return name;
+    public String getTittle() {
+        return tittle;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTittle(String tittle) {
+        this.tittle = tittle;
     }
 
     public String getIntroduction() {

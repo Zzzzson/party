@@ -14,7 +14,7 @@
 </head>
 <body>
     <c:if test="${not empty list}">
-    <table>
+    <table border="8">
         <tr>
             <td>id</td>
             <td>name</td>
